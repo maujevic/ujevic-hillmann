@@ -83,12 +83,13 @@ h5, h6{
 }
 
 a{
-    color:rgb(255, 255, 255);
+    color:#ff8c99;
     text-decoration:none;
+    font-weight:bolder
 }
 
 a:hover{
-    color:rgb(255, 255, 255);
+    color:#ffb100;
     text-decoration:underline;
 }
 
