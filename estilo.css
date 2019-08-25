@@ -32,7 +32,7 @@ h1{ /*titulo de la pagina*/
     h2{ /*titulo de la pagina*/
     font-family:'Source Sans Pro', sans-serif;
     color:#ffffff; /* lo básico, para evitar problemas */
-    color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */ /* color del titulo sobre video*/ 
+    color:rgb(230, 58, 126); /* si el navegador lo entiende, lo usa */ /* color del titulo sobre video*/ 
     text-align:center;
     letter-spacing:0.1em;
     font-weight:700;
@@ -83,12 +83,12 @@ h5, h6{
 }
 
 a{
-    color:rgb(155,0,0);
+    color:rgb(255, 255, 255);
     text-decoration:none;
 }
 
 a:hover{
-    color:rgb(255,0,0);
+    color:rgb(255, 255, 255);
     text-decoration:underline;
 }
 
@@ -247,16 +247,16 @@ AHORA VAMOS POR PORTAFOLIO
     .item{
         width:48%;
         margin:1%;
-        background:#212120; /*color de capsulas cuando achico pantalla, tiene que tener el mismo color que los otros*/
-        color:#eee;
+        background:#fffefebf; /*color de capsulas cuando achico pantalla, tiene que tener el mismo color que los otros*/
+        color:#000;
     }
 }
  @media screen and (max-width: 576px){
      .item{
          width:96%;
          margin:2%;
-         background:#000; /*cuando achico más, cambiar al mismo*/
-         color:#FFF;
+         background:#fffefebf; /*cuando achico más, cambiar al mismo*/
+         color:#000;
     }
 }
  .item:hover{
