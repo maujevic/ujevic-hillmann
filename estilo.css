@@ -1,0 +1,296 @@
+@import url(('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans&display=swap');/* 
+
+Así se escriben los comentario en CSS.
+Siempre se abren con slash asterisco, y
+se cierran con asterisco slash.
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Karla', sans-serif;
+    font-weight:400;
+    color:#212120; /*COLOR LETRAS DE ABAJO*/
+    background-color:#ffb10029; /*fondo detras del video*/
+}
+
+h1{ /*titulo de la pagina*/
+    font-family: 'Alfa Slab One', sans-serif;
+    color:#ffffff; /* lo básico, para evitar problemas */
+    color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */ /* color del titulo sobre video*/ 
+    text-align:center;
+    letter-spacing:0.1rem;
+    font-weight:700;
+
+}
+    h2{ /*titulo de la pagina*/
+    font-family:'Source Sans Pro', sans-serif;
+    color:#ffffff; /* lo básico, para evitar problemas */
+    color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */ /* color del titulo sobre video*/ 
+    text-align:center;
+    letter-spacing:0.1em;
+    font-weight:700;
+}
+
+h1{
+    font-size:3.3rem;
+}
+
+h2{
+    font-size:0,3rem;
+    letter-spacing:0.1em;
+}
+
+@media screen and (max-width: 768px){
+    h1{ font-size:2.25rem; }
+    h2{ font-size:1.5rem; }
+}
+
+@media screen and (max-width: 576px){
+    h1{ font-size:1.5rem; }
+    h2{ font-size:1rem; }
+}
+
+h3{
+    display:none;
+}
+
+h4{ /*nombres*/
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#ffffff;
+    color:rgba(0,0,0,0.86) /*COLOR DEL TITULO TRABAJOS*/
+}
+
+q,{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgba(255,255,255,0.5);
+    font-size: 0.1rem;
+
+}
+
+address, blockquote {
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+h5, h6{
+    font-weight:700;     
+}
+
+a{
+    color:rgb(155,0,0);
+    text-decoration:none;
+}
+
+a:hover{
+    color:rgb(255,0,0);
+    text-decoration:underline;
+}
+
+header{
+    width:100%;
+    top:36%;
+    position: absolute;
+    text-align:center;
+    z-index:9;
+}
+
+@media screen and (orientation: portrait){
+    header{ top:12%; }
+}
+
+video{
+    width:98%;
+    padding:1% 1% .75% 1%;
+    height:auto;
+}
+
+main{
+    width:100%;
+}
+
+/* 
+Puedes revisar detalles sobre el siguiente uso de flex 
+en https://www.taniarascia.com/easiest-flex-grid-ever/ 
+*/
+
+#equipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color:#fff /* lo mismo que #FFFFFF, simplificando pares iguales*/;
+    color:rgba(255,255,255,1); /*COLOR DE LA FRASE*/
+}
+
+#equipo a{
+    color:rgba(255,255,255,.7); /*COLOR DEL MAIL*/
+}
+
+#equipo a:hover{
+    color:rgba(255,255,255,.9); /*COLOR DE CUANDO PASAS EL MOUSE MAIL*/
+}
+
+.integrante {
+    flex-basis: 100%;
+}
+
+.integrante:hover {
+    cursor:crosshair;
+}
+
+@media screen and (orientation: landscape){
+    .integrante { flex:1; }
+}
+
+.integrante h4{
+    padding: 2rem 2rem 0.25rem 2rem;
+    font-size: larger;
+    font-weight: bolder; /*NEGRITA PARA EL NOMBRE*/
+    color: #ffffff; /*COLOR DE LOS NOMBRES INTEGRANTES*/
+
+
+}
+
+.integrante address{
+    padding: 0.25rem 2rem;
+    font-size:0.9em;
+    font-style:normal;
+    font-weight: lighter;
+}
+
+.integrante blockquote{
+    padding: 6rem 2rem 2rem 2rem;
+}
+
+@media screen and (orientation: landscape){
+    .integrante blockquote{
+        padding: 3rem 2rem 2rem 2rem;
+        max-width:50%;
+    }
+}
+
+.integrante blockquote cite {
+    display:block;
+    font-style: normal;
+    font-weight:bolder;
+    font-size:.8rem;
+    letter-spacing : 0.0rem;
+    padding-top:0.25rem;
+    color:rgba(255,255,255,.7) /*COLOR DEL AUTOR DE LA FRASE*/
+
+}
+
+.integrante blockquote cite:before {
+    content:"— ";
+}
+
+.integrante:nth-of-type(1){
+    background-color:#ff8c99; /*COLOR DE FONDO DE INTEGRANTE 1*/
+    background-image:url('media/integrante-1a.png');
+    background-position: bottom right;
+    background-size:auto 90%;
+    background-repeat: no-repeat;
+}
+
+
+.integrante:nth-of-type(2){
+    background:rgb(255, 200, 163); /*COLOR DE FONDO DE INTEGRANTE 2*/
+    background-image:url('media/integrante-2a.png');
+    background-position: bottom right;
+    background-size:auto 90%;
+    background-repeat: no-repeat;
+}
+
+.integrante:nth-of-type(1):hover{
+    background-color:rgb(255, 200, 163); /*COLOR DE FONDO DE INTEGRANTE 1 CUANDO PONES ENCIMA*/
+    background-image:url('media/integrante-1b.png');
+    background-position: bottom right;
+    background-size:auto 90%;
+    background-repeat: no-repeat;
+}
+
+.integrante:nth-of-type(2):hover{
+    background:#ff8c99; /*COLOR DE FONDO DE INTEGRANTE 2 CUANDO PONES ENCIMA*/
+    background-image:url('media/integrante-2b.png');
+    background-position: bottom right;
+    background-size:auto 90%;
+    background-repeat: no-repeat;
+}
+
+/*
+
+AHORA VAMOS POR PORTAFOLIO
+
+*/
+
+#portafolio{
+    width:100%;
+    padding:.25% 0;
+    background:linear-gradient(to bottom, #ff016b8c, #ff8d0038); /*FONDO*/
+}
+
+.item { /**/
+    width:23%;
+    margin:1%;
+    color:#000000; /* color tipografia capsula de texto*/
+    background:#fffefebf; /*fondo de las capsulas de texto*/
+    box-shadow:0 0 5px rgba(255, 0, 82, 0.4); /*sombra capsulas*/
+    font-size: normal;
+}
+
+@media screen and (max-width: 768px){
+    .item{
+        width:48%;
+        margin:1%;
+        background:#212120; /*color de capsulas cuando achico pantalla, tiene que tener el mismo color que los otros*/
+        color:#eee;
+    }
+}
+ @media screen and (max-width: 576px){
+     .item{
+         width:96%;
+         margin:2%;
+         background:#000; /*cuando achico más, cambiar al mismo*/
+         color:#FFF;
+    }
+}
+ .item:hover{
+     cursor:crosshair;
+}
+ .item figure{
+     overflow:hidden;
+}
+ .item figure img{
+     width:100%;
+     height:auto;
+     margin-bottom:-4px;
+}
+ .item:hover figure img{
+     transform:scale(1.2);
+     transition:all ease-out 1s;
+}
+ .item h4{
+     font-size:1em; /* TITULO TRABAJO*/
+     letter-spacing:0.025em;
+     margin:5% 5% 3% 5%;
+}
+ .item p{ /*LETRA DE DESCRIPCIÓN*/
+     font-size:0.7em;
+     letter-spacing:0.05em;
+     margin:2% 5% 6% 5%;
+}
+ footer{
+     width:100%;
+     padding:2.5em 0 2em 0;
+     text-align:center;
+}
+ footer p{
+     text-transform:uppercase;
+     letter-spacing:0.1em;
+     font-size:0.9em;
+}

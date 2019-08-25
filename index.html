@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>#unomásunoStudio</title>
+    <link rel="icon" type="image/jpg" href="media/favicon.png" />
+    <!-- Metadatos genéricos -->
+    <meta name="description" content="Portafolio Milena Ujevic y Sofía Hillmann, Estudiantes de Diseño Integral Universidad Católica. Proyectos de diseño gráfico, identidad de marca, producto, diseño audiovisual, packaging">
+    <meta name="image" content="media/imagen.jpg">
+    <!-- Metadatos Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="unomásunoStudio">    <!-- NOMBRE DEL GRUPO -->
+    <meta name="twitter:description" content="Estudio de diseño integral que se especializa en el desarollo de identidades de marca, productos y videos, estudiantes de Diseño UC  ">
+    <meta name="twitter:image:src" content="media/imagen.jpg">
+    <!-- Metadatos Open Graph (Facebook, Pinterest & LinkedIn) -->
+    <meta name="og:title" content="unomásunoStudio">
+    <meta name="og:description" content="Estudio de diseño integral que se especializa en el desarollo de identidades de marca, productos y videos, estudiantes de Diseño UC">
+    <meta name="og:image" content="media/imagen.jpg">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>#unomásunoStudio</h1>
+        <h2>Diseño integral, especializados en identidad de marca y producto</h2> <!--titulo de la pagina web-->
+    </header>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/video.webm" type="video/webm"> <!--como se llama en la carpeta media-->
+        <source src="media/video.mp4" type="video/mp4"> <!--como se llama en la carpeta media-->
+    </video>
+    <main>
+        <section id="equipo">
+            <h3>Quiénes somos</h3>
+            <div class="integrante">
+                <h4># MILENA UJEVIC</h4>
+                <address><a href="mailto:maujevic@uc.cl">maujevic@uc.cl</a></address>
+                <blockquote>Diseño gráfico, audiovisual y fotografía</blockquote> <!--cambiar frase-->
+                <address><a href="https://www.instagram.com/_ujevicsteinmile/?hl=es-la">Instagram</a></address>
+            </div>
+            <div class="integrante">
+                <h4># SOFÍA HILLMANN</h4>
+                <address><a href="mailto:smhillmann@uc.cl">smhillmann@uc.cl</a></address>
+                <blockquote>Diseño industrial, digital y web</blockquote><!--cambiar frase-->
+                <address><a href="https:///www.instagram.com/sofi_hillmann/?hl=es-la">Instagram</a></address>
+            </div>
+        </section>
+        <section id="portafolio">
+            <h3>Nuestros trabajos</h3>
+            <!--acá se colocan y organizan las cosas con programación-->
+        </section>
+    </main>
+    <footer>
+        <p>Procesos de Producción · sección web · segundo semestre · 2019</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
