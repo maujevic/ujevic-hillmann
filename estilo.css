@@ -1,4 +1,4 @@
-@import url(('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans&display=swap');/* 
 
@@ -43,7 +43,7 @@ h1{
 }
 
 h2{
-    font-size:0,3rem;
+    font-size:0,3em;
     letter-spacing:0.1em;
 }
 
@@ -67,7 +67,7 @@ h4{ /*nombres*/
     color:rgba(0,0,0,0.86) /*COLOR DEL TITULO TRABAJOS*/
 }
 
-q,{
+q{
     font-family: 'Source Sans Pro', sans-serif;
     color:rgba(255,255,255,0.5);
     font-size: 0.1rem;
@@ -241,7 +241,6 @@ AHORA VAMOS POR PORTAFOLIO
     color:#000000; /* color tipografia capsula de texto*/
     background:#fffefebf; /*fondo de las capsulas de texto*/
     box-shadow:0 0 5px rgba(255, 0, 82, 0.4); /*sombra capsulas*/
-    font-size: normal;
 }
 
 @media screen and (max-width: 768px){
