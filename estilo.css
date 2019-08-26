@@ -25,7 +25,7 @@ h1{ /*titulo de la pagina*/
     color:#ffffff; /* lo básico, para evitar problemas */
     color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */ /* color del titulo sobre video*/ 
     text-align:center;
-    letter-spacing:0.1rem;
+    letter-spacing:0.1em;
     font-weight:700;
 
 }
@@ -70,7 +70,7 @@ h4{ /*nombres*/
 q{
     font-family: 'Source Sans Pro', sans-serif;
     color:rgba(255,255,255,0.5);
-    font-size: 0.1rem;
+    font-size: 0.1em;
 
 }
 
